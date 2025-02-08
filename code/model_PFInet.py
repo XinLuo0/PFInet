@@ -258,7 +258,7 @@ class Net(nn.Module):
         x_res = x
         x = x.reshape(b,u*v,c,h,w)
 
-        ######### can be choosed #########
+        ######### PreNorm #########
         # ratio = self.my_norm(x).reshape(b, 1, 1, 1, 1).expand_as(x)
         # x = x * ratio
         ##################################
